@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "41349570786",
+    "project_id": "exercicio-infnet",
+    "storage_bucket": "exercicio-infnet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41349570786:android:e903932155f5809878febb",
+        "android_client_info": {
+          "package_name": "br.edu.infnet.google_firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41349570786-svcure8ur8sv8lpe5mnnfckr6eg9fuvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnZoUIApgr5pFONJ6ZMGDlMvCuU0Qa7k8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41349570786-svcure8ur8sv8lpe5mnnfckr6eg9fuvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
