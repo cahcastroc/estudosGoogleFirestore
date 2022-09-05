@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class ListaContatoAdapter() : RecyclerView.Adapter<ListaContatoAdapter.ViewHolder>() {
@@ -57,9 +58,15 @@ class ListaContatoAdapter() : RecyclerView.Adapter<ListaContatoAdapter.ViewHolde
 
             //ItemView é o item clicado --Ao clicar temos que notificar o recyclerViewItemClicked(que criamos na outra classe)
 
-            itemView.setOnClickListener {
-                itemListener.recyclerViewItemClicked(it,user.id!!)
-            }
+                itemView.setOnClickListener {
+                    itemListener.recyclerViewItemClicked(it,user.id!!)
+                }
+
+                itemView.setOnLongClickListener {
+                    itemListener.recyclerViewItemClicked(it,user.id!!)
+                    true
+                }
+
 
         }
 

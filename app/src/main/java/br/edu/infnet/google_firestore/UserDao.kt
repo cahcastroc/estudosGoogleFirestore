@@ -31,4 +31,9 @@ class UserDao {
 
         return db.collection(collection).document(id).get()
     }
+
+    fun del(id: String) : Task<Void> {
+
+        return db.collection(collection).document(id).delete();
+    }
 }
