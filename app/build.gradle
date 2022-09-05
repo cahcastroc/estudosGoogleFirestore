@@ -45,5 +45,5 @@ dependencies {
     //CloudFirestore
 
     implementation platform('com.google.firebase:firebase-bom:30.3.2')
-    implementation 'com.google.firebase:firebase-firestore-ktx:24.2.2'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.0.1'
 }
