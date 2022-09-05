@@ -72,6 +72,12 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemListener {
     }
 
     override fun recyclerViewItemClicked(view: View, id: String) {
-        Log.i("DR3","O usuário $id foi clicado") //clicar em verbose
+
+        userDao.obter(id).addOnSuccessListener{
+
+            val user = it.toObject(User::class.java)
+            Log.i("DR3","O usuário ${user!!.id} - ${user.nome} foi clicado")
+
+        }
     }
 }

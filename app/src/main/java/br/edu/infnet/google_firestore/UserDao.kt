@@ -2,6 +2,7 @@ package br.edu.infnet.google_firestore
 
 import com.google.android.gms.tasks.Task
 import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import com.google.firebase.firestore.QuerySnapshot
 import com.google.firebase.firestore.ktx.firestore
@@ -24,5 +25,10 @@ class UserDao {
 
     fun listar(): Task<QuerySnapshot>{
         return db.collection(collection).get()
+    }
+
+    fun obter(id: String) :Task<DocumentSnapshot>{
+
+        return db.collection(collection).document(id).get()
     }
 }
