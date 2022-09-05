@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class ListaContatoAdapter() : RecyclerView.Adapter<ListaContatoAdapter.ViewHolder>() {
@@ -63,7 +62,7 @@ class ListaContatoAdapter() : RecyclerView.Adapter<ListaContatoAdapter.ViewHolde
                 }
 
                 itemView.setOnLongClickListener {
-                    itemListener.recyclerViewItemClicked(it,user.id!!)
+                    itemListener.recyclerViewItemClickedLong(it,user.id!!)
                     true
                 }
 

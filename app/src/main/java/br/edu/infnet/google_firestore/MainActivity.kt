@@ -74,23 +74,22 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemListener {
     override fun recyclerViewItemClicked(view: View, id: String) {
 
 
-//        userDao.obter(id).addOnSuccessListener{
-//
-//            val user = it.toObject(User::class.java)
-//
-//
-//            Log.i("DR3","O usuário ${user!!.id} - ${user.nome} foi clicado")
-//
-//        }
+        userDao.obter(id).addOnSuccessListener{
 
-        //Ao clicar longamente deleta
+            val user = it.toObject(User::class.java)
+
+            //IMPLEMENTAR ATUALIZAR
+
+            Log.i("DR3","O usuário ${user!!.id} - ${user.nome} foi clicado")
+
+        }
+    }
+
+    //Click Longo
+    override fun recyclerViewItemClickedLong(view: View, id: String) {
         userDao.del(id).addOnSuccessListener {
             Log.i("DR3","deletado")
             listar()
         }
-
-        //---------------
-
-
     }
 }

@@ -28,12 +28,12 @@ class UserDao {
     }
 
     fun obter(id: String) :Task<DocumentSnapshot>{
-
         return db.collection(collection).document(id).get()
     }
 
     fun del(id: String) : Task<Void> {
-
         return db.collection(collection).document(id).delete();
     }
+
+
 }
